@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>Insane Bunny</title>
+
+
+
+
+    <script src="http://interactivecomputergraphics.com/8E/Code%20update/Common/initShadersES6.js"></script>
+    <script src="http://interactivecomputergraphics.com/8E/Code%20update/Common/MVES6.js"></script>
+
+    <script type="text/javascript" src="mesh.js"></script>
+  </head>
+
+  <body>
+    <center>
+      <div style="display: flex; justify-content: center; gap: 50px;">
+        <div>
+          
+      <div class="form-group">
+        <label for="vertex1R">Translate on X:</label>
+        <input type="range" id="vertex1RSlider" min="-10" max="10" value="0">
+        <span id="vertex1RValue">0</span>
+    </div>
+    <!-- convert this slider to a button -->
+    <div class="form-group">
+      <label for="vertex1R_Y">Translate along Y:</label>
+      <input type="range" id="vertex1RSlider_Y" min="-10" max="10" value="0">
+      <span id="vertex1RValue_Y">0</span>
+    </div>
+    <div>
+      <label for="vertex1R_Z">Translate along Z:</label>
+      <input type="range" id="vertex1RSlider_Z" min="-10" max="10" value="0">
+      <span id="vertex1RValue_Z">0</span>
+    </div>
+    <div>
+      <label for="scale_X">Scale X:</label>
+      <input type="range" id="sliderScale_X" min="-10" max="10" value="0">
+      <span id="valueScale_X">0</span>
+    </div>
+    <div>
+      <label for="scale_Y">Scale Y:</label>
+      <input type="range" id="sliderScale_Y" min="-10" max="10" value="0">
+      <span id="valueScale_Y">0</span>
+    </div>
+    <div>
+      <label for="scale_Z">Scale Z:</label>
+      <input type="range" id="sliderScale_Z" min="-10" max="10" value="0">
+      <span id="valueScale_Z">0</span>
+    </div>
+    <div>
+      <label for="rotate_X">Rotate about X:</label>
+      <input type="range" id="sliderRotate_X" min="-10" max="10" value="0">
+      <span id="valueRotate_X">0</span>
+    </div>
+    <div>
+      <label for="rotate_Y">Rotate about Y:</label>
+      <input type="range" id="sliderRotate_Y" min="-10" max="10" value="0">
+      <span id="valueRotate_Y">0</span>
+    </div>
+    <div>
+      <label for="rotate_Z">Rotate about Z:</label>
+      <input type="range" id="sliderRotate_Z" min="-10" max="10" value="0">
+      <span id="valueRotate_Z">0</span>
+    </div>
+    <button id="reflect_x">Reflect about X</button>
+    <button id="reflect_y">Reflect about Y</button>
+    <button id="reflect_z">Reflect about Z</button>
+    <button id="reset">Reset All Transformation</button>
+    <button id="colorReset">Randomize Color</button>
+  </div>
+  <div style="display: flex; flex-direction: column;">
+    <input type="file" id="fileInput" accept=".ply"></input>
+    <canvas id="gl-canvas" width="512" height="512" style="border: 2px solid black;">
+      Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+  </div>
+  </div>
+  </center>
+  </body>
+</html>
